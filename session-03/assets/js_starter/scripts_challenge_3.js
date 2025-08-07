@@ -10,7 +10,7 @@ class UserObject {
     address,
     skills,
     socialProfiles
-  ) {
+  ) {22
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
