@@ -1,17 +1,25 @@
-// Challenge 2 Solution
+// Challenge 2 Starter
 // Initialise the arrays
 let array1 = [1, 2, 3, 2];
 let array2 = [4, 5, 6, 4];
 
 // Use the spread operator to merge the two arrays
-let mergedArray = [...array1, ...array2];
+
+let combined = [...array1, ...array2];
+console.log(combined);
 
 // Use the Set object to remove duplicates
-let uniqueArray = [...new Set(mergedArray)];
+
+let removeDuplicates = [... new Set(combined)];
+console.log(removeDuplicates);
 
 // Use array destructuring to assign the first three elements to variables
-let [firstElement, secondElement, thirdElement] = uniqueArray;
+
+let [first,second,third] = removeDuplicates;
+console.log(second);
+
 
 // Set the value of the output filed to be the second element of the unique array
-let outputField = document.getElementById("OutputField");
-outputField.innerHTML = secondElement;
+
+document.getElementById("OutputField").innerHTML = second;
+
