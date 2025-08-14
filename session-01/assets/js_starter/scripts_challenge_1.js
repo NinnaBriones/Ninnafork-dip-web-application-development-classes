@@ -3,15 +3,15 @@
 let numbers = [1, 2, 3, 4, 5];
 
 // Define the function doubleNumbers
-// function doubleNumbers(arr) {
-//   let doubled = arr.map((number) => number * 2);
 
-//   return doubled;
-// }
+function doubleNumbers (array) {
+let double = array.map(number => number * 2);
+return double;
 
-let doubledNumbers = (arr) => arr.map((number) => number * 2);
+}
 
 // Call the function with the numbers array
+
 let result = doubleNumbers(numbers);
 
 // Console log the new array
